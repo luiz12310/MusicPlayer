@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Player Music</title>
+</head>
+<body id="body">
+
+    <img id="imagemFundo"/>
+    <div id="mainContainer">
+        <div id="containerImg">       
+            <img src="musicas/arabellaImage.jpg" id="imageMusic">
+        </div>
+        <div id="containerText">
+            <h1 id="TitlleSong">Nome da Musica</h1>
+            <h2 id="artistMusic">Nome do artista</h2>
+        </div>
+
+        <div class="barraProgresso">
+            <div id="progresso"></div>
+
+            <div id="tempoMusica">
+                <span id="musicaAndamento">0:00</span>
+                <span id="duracaoMusica">0:00</span>
+            </div>
+        </div> 
+
+        <div class="botoes">
+            <i class="fa-solid fa-backward-step" id="back"></i>
+            <i class="fa-solid fa-play" id="play"></i>
+            <i class="fa-solid fa-forward-step" id="front"></i>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

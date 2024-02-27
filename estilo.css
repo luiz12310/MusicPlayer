@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    background-color: #505273;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#imagemFundo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    filter: blur(20px);
+}
+
+#play{
+    font-size: 35px;
+}
+
+i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#mainContainer{
+    border-radius: 10%;
+    height: 70vh;
+    width: 35vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#mainContainer:hover{
+    box-shadow: 0 15px 30px;
+}
+
+#containerImg img{
+    border-radius: 10%;
+    width: 100%;
+    height: 100%;
+
+    filter: drop-shadow(10px 0 30px);
+}
+
+#containerImg{
+    position: relative;
+    top: -8vh;
+    width: 17vw;
+}
+
+h1, h2{
+    text-align: center;
+    font-weight: 100;
+}
+
+.botoes{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3vh;
+}
+
+.botoes i{
+    margin-top: 1vh;
+}
+
+.barraProgresso{
+    height: 2vh;
+    border-radius: 5px;
+    width: 85%;
+    margin-top: 6vh;
+    background-color: #babaca;
+}
+
+#progresso{
+    height: 100%;
+    border-radius: 5px;
+    width: 0%;
+    background-color: black;
+    transition: width cubic-bezier(0.33, 0.6, 0.19, 0.97);
+}
+
+#TitlleSong{
+    padding: 0 5vw;
+}
+
+#tempoMusica{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1vh;
+}
+
+
+
+@media screen and (max-width: 700px){
+
+    #mainContainer{
+        width: 65vw;
+    }
+
+    #containerImg{
+        width: 30vw;
+        position: static;
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+    }
+
+    .botoes{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 700px){
+
+    #containerImg{
+        width: 22vw;
+    }
+
+    #mainContainer{
+        width: 65vw;
+    }
+}
+
+@media screen and (min-width: 750px){
+
+    #mainContainer{
+        width: 65vw;
+    }
+}
+
+@media screen and (min-width: 850px){
+
+    #mainContainer{
+        width: 55vw;
+    }
+
+    #containerImg{
+        width: 22vw;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    #mainContainer{
+        width: 45vw;
+    }
+
+    #containerImg{
+        width: 20vw;
+    }
+}
+
+@media screen and (min-width: 1115px){
+    #mainContainer{
+        width: 40vw;
+    }
+
+    .botoes{
+        width: 25%;
+    }
+
+    #containerImg{
+        width: 15vw;
+    }
+}
